@@ -11,8 +11,8 @@
 
 | Паттерн           | `id` (папка)       | Суть в одну строку                                                           | Статус       | Карточка |
 |-------------------|--------------------|------------------------------------------------------------------------------|--------------|:--------:|
-| Chain-of-Thought  | `cot`              | Пошаговое рассуждение в тексте перед ответом                                 | established  |    ⏳     |
-| Self-Consistency  | `self-consistency` | Несколько путей рассуждения → берем самый частый ответ                       | established  |    ⏳     |
+| Chain-of-Thought  | [`cot`](cot/)      | Пошаговое рассуждение в тексте перед ответом                                 | established  |  [✅](cot/)  |
+| Self-Consistency  | [`self-consistency`](self-consistency/) | Несколько путей рассуждения → берем самый частый ответ                       | established  |  [✅](self-consistency/)  |
 | ReAct             | [`react`](react/)  | Цикл Thought → Action → Observation; дефолт для tool-using агентов           | established  |  [✅](react/)  |
 | ReWOO             | `rewoo`            | План с плейсхолдерами + пакетное исполнение; 2 вызова вместо N               | established  |    ⏳     |
 | Plan-and-Execute  | `plan-and-execute` | План всех шагов заранее, затем исполнение (часто дешевой моделью)            | established  |    ⏳     |
