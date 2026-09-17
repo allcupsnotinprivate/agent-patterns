@@ -1,0 +1,6 @@
+flowchart TD
+    Q[Задача] --> A[Actor: попытка]
+    A --> E{Evaluator<br/>среда/тест}
+    E -- успех --> F[Ответ]
+    E -- неудача --> R[Self-reflection<br/>урок в эпизодическую память]
+    R --> A

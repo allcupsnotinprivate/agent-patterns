@@ -15,7 +15,7 @@ tags: [single-agent, reasoning, search, mcts, tool-use]
 
 ## Суть
 
-**LATS** (Zhou et al., ICML 2024) объединяет три линии группы в один алгоритм: поиск по дереву ([Tree of Thoughts](../tot/)), действия во внешней среде ([ReAct](../react/)) и словесную саморефлексию (**Reflexion**). Каркас - **MCTS** (Monte Carlo Tree Search) с четырьмя фазами: selection → expansion → evaluation → backpropagation, где:
+**LATS** (Zhou et al., ICML 2024) объединяет три линии группы в один алгоритм: поиск по дереву ([Tree of Thoughts](../tot/)), действия во внешней среде ([ReAct](../react/)) и словесную саморефлексию ([Reflexion](../reflexion/)). Каркас - **MCTS** (Monte Carlo Tree Search) с четырьмя фазами: selection → expansion → evaluation → backpropagation, где:
 - **узлы дерева** - это состояния агента (последовательности thought/action/observation, как в ReAct);
 - **оценка узла** - LM-value-функция (модель оценивает перспективность состояния) плюс **реальная обратная связь среды** (результаты инструментов, тесты), а не только внутренняя эвристика;
 - **саморефлексия** - после неудачной ветви агент пишет вербальный вывод, который улучшает последующее расширение дерева.
@@ -61,7 +61,7 @@ flowchart TD
 
 - **[Tree of Thoughts](../tot/)** - дерево без MCTS, без действий во внешней среде и без рефлексии.
 - **[ReAct](../react/)** - одна траектория thought/action/observation; LATS ищет по дереву таких траекторий.
-- **Reflexion** - механизм саморефлексии, встроенный в оценку и расширение узлов LATS.
+- **[Reflexion](../reflexion/)** - механизм саморефлексии, встроенный в оценку и расширение узлов LATS.
 
 ## Реализации
 

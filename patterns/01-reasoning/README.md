@@ -20,9 +20,9 @@
 | Tree of Thoughts  | [`tot`](tot/)      | Ветвление мыслей, оценка узлов, поиск BFS/DFS с бэктрекингом                 | established  |  [✅](tot/)  |
 | Graph of Thoughts | [`got`](got/)      | Мысли как граф: агрегирование и переиспользование ветвей                     | experimental |  [✅](got/)  |
 | LATS              | [`lats`](lats/)    | MCTS + value-функции + рефлексия + обратная связь среды                      | experimental |  [✅](lats/)  |
-| Reflexion         | `reflexion`        | Вербальное RL: саморефлексия в эпизодическую память между попытками          | established  |    ⏳     |
-| Self-Refine       | `self-refine`      | Одна модель в трех ролях: генератор → критик → редактор                      | established  |    ⏳     |
-| CRITIC            | `critic`           | verify → critique → correct с опорой на внешние инструменты                  | established  |    ⏳     |
+| Reflexion         | [`reflexion`](reflexion/) | Вербальное RL: саморефлексия в эпизодическую память между попытками          | established  |  [✅](reflexion/)  |
+| Self-Refine       | [`self-refine`](self-refine/) | Одна модель в трех ролях: генератор → критик → редактор                      | established  |  [✅](self-refine/)  |
+| CRITIC            | [`critic`](critic/) | verify → critique → correct с опорой на внешние инструменты                  | established  |  [✅](critic/)  |
 
 ## Порядок чтения
 
