@@ -14,8 +14,8 @@
 | Chain-of-Thought  | [`cot`](cot/)      | Пошаговое рассуждение в тексте перед ответом                                 | established  |  [✅](cot/)  |
 | Self-Consistency  | [`self-consistency`](self-consistency/) | Несколько путей рассуждения → берем самый частый ответ                       | established  |  [✅](self-consistency/)  |
 | ReAct             | [`react`](react/)  | Цикл Thought → Action → Observation; дефолт для tool-using агентов           | established  |  [✅](react/)  |
-| ReWOO             | `rewoo`            | План с плейсхолдерами + пакетное исполнение; 2 вызова вместо N               | established  |    ⏳     |
-| Plan-and-Execute  | `plan-and-execute` | План всех шагов заранее, затем исполнение (часто дешевой моделью)            | established  |    ⏳     |
+| ReWOO             | [`rewoo`](rewoo/)  | План с плейсхолдерами + пакетное исполнение; 2 вызова вместо N               | established  |  [✅](rewoo/)  |
+| Plan-and-Execute  | [`plan-and-execute`](plan-and-execute/) | План всех шагов заранее, затем исполнение (часто дешевой моделью)            | established  |  [✅](plan-and-execute/)  |
 | LLMCompiler       | `llm-compiler`     | Planner стримит DAG задач, исполнение параллельно по готовности зависимостей | emerging     |    ⏳     |
 | Tree of Thoughts  | `tot`              | Ветвление мыслей, оценка узлов, поиск BFS/DFS с бэктрекингом                 | established  |    ⏳     |
 | Graph of Thoughts | `got`              | Мысли как граф: агрегирование и переиспользование ветвей                     | experimental |    ⏳     |
