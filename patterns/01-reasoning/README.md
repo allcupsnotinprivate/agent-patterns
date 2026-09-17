@@ -16,10 +16,10 @@
 | ReAct             | [`react`](react/)  | Цикл Thought → Action → Observation; дефолт для tool-using агентов           | established  |  [✅](react/)  |
 | ReWOO             | [`rewoo`](rewoo/)  | План с плейсхолдерами + пакетное исполнение; 2 вызова вместо N               | established  |  [✅](rewoo/)  |
 | Plan-and-Execute  | [`plan-and-execute`](plan-and-execute/) | План всех шагов заранее, затем исполнение (часто дешевой моделью)            | established  |  [✅](plan-and-execute/)  |
-| LLMCompiler       | `llm-compiler`     | Planner стримит DAG задач, исполнение параллельно по готовности зависимостей | emerging     |    ⏳     |
-| Tree of Thoughts  | `tot`              | Ветвление мыслей, оценка узлов, поиск BFS/DFS с бэктрекингом                 | established  |    ⏳     |
-| Graph of Thoughts | `got`              | Мысли как граф: агрегирование и переиспользование ветвей                     | experimental |    ⏳     |
-| LATS              | `lats`             | MCTS + value-функции + рефлексия + обратная связь среды                      | experimental |    ⏳     |
+| LLMCompiler       | [`llm-compiler`](llm-compiler/) | Planner стримит DAG задач, исполнение параллельно по готовности зависимостей | emerging     |  [✅](llm-compiler/)  |
+| Tree of Thoughts  | [`tot`](tot/)      | Ветвление мыслей, оценка узлов, поиск BFS/DFS с бэктрекингом                 | established  |  [✅](tot/)  |
+| Graph of Thoughts | [`got`](got/)      | Мысли как граф: агрегирование и переиспользование ветвей                     | experimental |  [✅](got/)  |
+| LATS              | [`lats`](lats/)    | MCTS + value-функции + рефлексия + обратная связь среды                      | experimental |  [✅](lats/)  |
 | Reflexion         | `reflexion`        | Вербальное RL: саморефлексия в эпизодическую память между попытками          | established  |    ⏳     |
 | Self-Refine       | `self-refine`      | Одна модель в трех ролях: генератор → критик → редактор                      | established  |    ⏳     |
 | CRITIC            | `critic`           | verify → critique → correct с опорой на внешние инструменты                  | established  |    ⏳     |

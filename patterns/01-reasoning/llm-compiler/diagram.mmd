@@ -1,0 +1,10 @@
+flowchart TD
+    Q[Вопрос] --> P[Planner<br/>стримит DAG задач]
+    P --> TF[Task Fetching Unit<br/>диспатчит готовые задачи]
+    TF -->|параллельно| T1[Задача A]
+    TF -->|параллельно| T2[Задача B]
+    T1 --> T3[Задача C: зависит от A и B]
+    T2 --> T3
+    T3 --> J{Joiner:<br/>finish или replan?}
+    J -- replan --> P
+    J -- finish --> F[Ответ]

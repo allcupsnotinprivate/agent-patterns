@@ -1,0 +1,9 @@
+flowchart TD
+    R[Корень] --> Sel[Selection<br/>выбор узла по value]
+    Sel --> Exp[Expansion<br/>ReAct-действия из узла]
+    Exp --> Ev[Evaluation<br/>LM-value + отклик среды]
+    Ev --> Bp[Backpropagation<br/>обновление оценок вверх]
+    Bp --> Sel
+    Ev -. неудача .-> Ref[Рефлексия<br/>вербальный вывод]
+    Ref --> Exp
+    Bp --> F[Решение при достаточной оценке]
