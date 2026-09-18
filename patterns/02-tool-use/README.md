@@ -9,11 +9,11 @@
 | Паттерн                   | `id` (папка)       | Суть в одну строку                                                   | Статус      | Карточка |
 |---------------------------|--------------------|----------------------------------------------------------------------|-------------|:--------:|
 | Function / tool calling   | [`function-calling`](function-calling/) | Модель возвращает структурированный вызов инструмента                | established |  [✅](function-calling/)  |
-| Toolformer                | `toolformer`       | Модель сама учится, когда и какие API вызывать (self-supervised)     | emerging    |    ⏳     |
-| Gorilla                   | `gorilla`          | LLM, соединенный с массой API; Berkeley Function-Calling Leaderboard | emerging    |    ⏳     |
-| CodeAct                   | `codeact`          | Действие = исполняемый код вместо JSON; самоотладка по трейсбекам    | emerging    |    ⏳     |
-| Computer use / GUI-агенты | `computer-use`     | VLM видит экран и эмитит click/type/scroll                           | emerging    |    ⏳     |
-| Browser-агенты            | `browser-agents`   | Чтение DOM (дешево, точно) либо скриншотов (устойчиво к динамике)    | emerging    |    ⏳     |
+| Toolformer                | [`toolformer`](toolformer/)     | Модель сама учится, когда и какие API вызывать (self-supervised)     | emerging    |  [✅](toolformer/)  |
+| Gorilla                   | [`gorilla`](gorilla/)           | LLM, соединенный с массой API; Berkeley Function-Calling Leaderboard | emerging    |  [✅](gorilla/)  |
+| CodeAct                   | [`codeact`](codeact/)           | Действие = исполняемый код вместо JSON; самоотладка по трейсбекам    | emerging    |  [✅](codeact/)  |
+| Computer use / GUI-агенты | [`computer-use`](computer-use/) | VLM видит экран и эмитит click/type/scroll                           | emerging    |  [✅](computer-use/)  |
+| Browser-агенты            | [`browser-agents`](browser-agents/) | Чтение DOM (дешево, точно) либо скриншотов (устойчиво к динамике)    | emerging    |  [✅](browser-agents/)  |
 | Agentic RAG               | [`agentic-rag`](agentic-rag/) | Извлечение под управлением агента: Self-RAG, CRAG                    | established |  [✅](agentic-rag/)  |
 
 ## Порядок чтения
